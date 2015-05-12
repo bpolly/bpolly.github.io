@@ -177,7 +177,9 @@ h2 {
 }
 
 .img-circle {
-    border-radius: 50%;
-    height: 30%;
-    float: right;
+  border-radius: 50%;
+  float: right;
+  width: 43.66%;
+  margin-left: 2rem;
+  max-width: 500px;
 }
