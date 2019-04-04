@@ -1,68 +1,67 @@
 <head>
-    <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="main.css">
-<link href='http://fonts.googleapis.com/css?family=Arvo|Slabo+27px|Roboto|Open+Sans+Condensed:300|Inconsolata' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
 </head>
-<body>
-    <div class="topbar">
-        <p></p>
-    </div>
-    <div class="navbar">
-        <h1><a href="/">Braden Polly</a> - <span id="sd">Software Developer</span></h1>
-    </div>
-    <br/>
-    <div class="navbar2">
-        <ul>
-        <li><a href="#">About  <i class="fa fa-info-circle"></i></a></li>
-        <li><a href="#">Resume  <i class="fa fa-file-text-o"></i></a></li>
-        <li><a href="#">GitHub   <i class="fa fa-github"></i></a></li>
-        <li><a href="#">LinkedIn  <i class="fa fa-linkedin"></i></a></li>
-        </ul>
-    </div>
-    <div id="narrowBG">
-    <div class="card">
-        <h1>About</h1>
-        <img class="img-circle"           src="MorganMeChristmas2014.jpg">
-        I am a 4th year Computer Science and Engineering major at the Ohio State University. My current focus is on networking applications. Have experience in web frontend and backend as well as client-side applications.
-    </div>
-        
-        <div class="card projects">
-        <h1>Projects</h1>
-            
-            <ul>
-            <li><h2>Cognitio Trivia Redesign</h2>
-                Ported website to run Ruby on Rails. Redesigned user and admin pages. Admins can now manage everything themselves given an admin panel that will give them easy access to the user and game databases. User views are now much more interactive and inuitive. Currently hosted on Amazon's web stack (EC2, Elastic Beanstalk, and RDS)
-                <br/>
-                <a href="http://cognitiotrivia.com">Link</a>
-                </li>
-                
-            <li><h2>Flag Poll</h2>
-                Website for users to create and vote on user-submitted polls. Users are able to create accounts to track their history, but everything remains anonymous to the users.
-                <br/><a href="http://flagpoll.tk">Link <small></small></a>
-                </li>
-            
-            
-            </ul>
-    </div>
-        
-        <div class="card">
-        <h1>Skills</h1>
-            <ul>
-                <li><h2>Experienced</h2>
-                Ruby, Rails, Java, HTML, CSS</li>
-                <li><h2>Have Used Before</h2>
-                C, JavaScript, jQuery</li>
-                <li><h2>Familiar With</h2>
-                Python, Objective-C</li>
 
-            </ul>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column col-2" id="sidebar-column">
+        <div id="corner-block"></div>
+        <div class="text-center" id="me-pic">
+          <img src="img_avatar.png">
+        </div>
+        <div id="name" class="h4 text-center">Braden Polly</div>
+        <ul class="sidebar-contents">
+          <li class="divider" data-content="PROFILES"></li>
+          <li class="menu-item"><a href="#menus">GitHub</a></li>
+          <li class="menu-item"><a href="#menus">LinkedIn</a></li>
+          <li class="menu-item"><a href="#menus">Skype</a></li>
+          <li class="divider" data-content="PROJECTS"></li>
+          <li class="menu-item"><a href="#menus">Sportcasts</a></li>
+          <li class="menu-item"><a href="#menus">Vim-TTR</a></li>
+          <li class="menu-item"><a href="#menus">NFL Video Finder</a></li>
+        </ul>
+      </div>
+      <div class="column">
+        <div class="header text-center">
+          <h2>Sportcasts</h2>
+          <div class="divider"></div>
+          <h5 class="subtitle">Find out when and where your favorite team is playing. On any device.</h5>
+          <div class="divider"></div>
+        </div>
+        <div id="project-labels" class="text-right">
+          <span class="label label-error">Ruby</span>
+          <span class="label label-error">Rails</span>
+          <span class="label label-primary">React</span>
+          <span class="label label-primary">NodeJS</span>
+        </div>
+        <!-- <div class="divider text-center" data-content="Find out when and where your favorite team is playing. On any device."></div> -->
+        <h5>Database + API</h5>
+        Supplying the data to all of the clients is a Rails server which scrapes NBC Sports for all new game information. Clients talk to the server via a typical REST API.
+        <br><br>
+
+        <h5>Web</h5>
+        For those who want a web expierence can use Sportcasts Web. It utilizes React to provide a quick, seamless experience for users who want to search for their team.
+
+        Also supported are user profiles for users who want to take advantage of notifications. After signup, users can select their favorite teams and then configure notifications to receive when those teams are about to play. Currently supported are SMS notifications, with email coming soon.
+        <br><br>
+      
+        <h5>Alexa Skill</h5>
+        The original client, Sportcasts Alexa provides a voice controlled interface for finding game information. To get game information, simply ask "Alexa, ask Sportcasts when the cavaliers play next" or "Alexa, ask Sportcasts what channel the Browns are on right now".
+
+        At the time of development, Amazon did not support passing along location information - this made it difficult for Alexa to tell them the time in their specific timezone. As a result, support was added for users to tell Sportcasts what their zipcode was to ensure they got told the correct time.
+        <br><br>
+
+        <h5>Chrome Extension</h5>
+        Sportcasts Chrome is a simple extension that when clicked on in the toolbar, a little box pops up with a team select. Selecting a team will fetch the game information for that team's next known game.
+        <br><br>
+
+        <h5>Telegram Bot</h5>
+        Sportcasts Telegram is a bot that can be called via its alias "@sportcasts" along with a team name, and it will automatically respond with information on that team's next game, just like the Chrome extension.
+      </div>
     </div>
-        
-        
-        <div id="footer">
-        Contact me: polly.6@osu.edu
-        </div>
-        </div>
+  </div>
 </body>
