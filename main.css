@@ -8,8 +8,9 @@ ul {
 }
 
 .container {
-    padding-left: 2.4rem;
-    padding-right: 2.4rem;
+    max-width: 1200px;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
 }
 
 #sidebar-column {
