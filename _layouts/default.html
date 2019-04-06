@@ -3,6 +3,7 @@
   <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
   <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
   <!-- <link href="https://fonts.googleapis.com/css?family=Lora|Merriweather|Noticia+Text|Source+Serif+Pro" rel="stylesheet"> -->
 </head>
 
@@ -15,31 +16,36 @@
           <img src="img_avatar.png">
         </div>
         <div id="name" class="h4 text-center">Braden Polly</div>
-        <ul class="sidebar-contents">
+        <ul class="sidebar-contents text-right">
+          <li class="divider" data-content="PROJECTS"></li>
+          <li class="menu-item">
+            <a href="sportcasts" class="{% if page.path == 'sportcasts.html' %}active-page{% endif %}">
+              Sportcasts
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="vttr" class="{% if page.path == 'vttr.html' %}active-page{% endif %}">
+              Vim-TTR
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="stm" class="{% if page.path == 'stm.html' %}active-page{% endif %}">
+              Spotify Time Machine
+            </a>
+          </li>
+          <li class="menu-item">
+            <a href="nflvf" class="{% if page.path == 'nflvf.html' %}active-page{% endif %}">
+              NFL Video Finder
+            </a>
+          </li>
+          <br>
           <li class="divider" data-content="PROFILES"></li>
           <li class="menu-item"><a href="#menus">GitHub</a></li>
           <li class="menu-item"><a href="#menus">LinkedIn</a></li>
-          <br>
-          <li class="divider" data-content="PROJECTS"></li>
-          <li class="menu-item"><a href="sportcasts">Sportcasts</a></li>
-          <li class="menu-item"><a href="vttr">Vim-TTR</a></li>
-          <li class="menu-item"><a href="stm">Spotify Time Machine</a></li>
-          <li class="menu-item"><a href="nflvf">NFL Video Finder</a></li>
         </ul>
       </div>
       <div class="column">
-        <div class="header text-center">
-          <h2>{{ page.title }}</h2>
-          <div class="divider"></div>
-          <h5 class="subtitle">{{ page.subtitle }}</h5>
-          <div class="divider"></div>
-        </div>
-
-        <br>
-
-        <div id="content">
-          {{ content }}
-        </div>
+        {{ content }}
       </div>
     </div>
   </div>
