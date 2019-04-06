@@ -1,3 +1,7 @@
+---
+---
+@import url('https://fonts.googleapis.com/css?family=Cardo:700|Cormorant+Garamond:500|Source+Serif+Pro|Yellowtail');
+
 body, html {
     margin : 0;
     min-width: 830px;
@@ -37,7 +41,9 @@ ul {
 }
 
 .header h2 {
-    color: #fb6066;
+    font-family: Yellowtail;
+    // color: #fb6066;
+    color: #232323;
 }
 
 #me-pic {
@@ -51,4 +57,24 @@ ul {
 
 .subtitle {
     color: #444;
+    font-weight: 300;
+}
+
+#content {
+    font-family: 'Source Serif Pro';
+
+    h5 {
+        font-weight: 600;
+    }
+}
+
+.header-with-label {
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+}
+
+.label {
+    padding: .1rem 0.3rem;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
 }
