@@ -16,34 +16,9 @@
           <img src="img_avatar.png">
         </div>
         <div id="name" class="h4 text-center">Braden Polly</div>
-        <ul class="sidebar-contents text-right">
-          <li class="divider" data-content="PROJECTS"></li>
-          <li class="menu-item">
-            <a href="sportcasts" class="{% if page.path == 'sportcasts.html' %}active-page{% endif %}">
-              Sportcasts
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="vttr" class="{% if page.path == 'vttr.html' %}active-page{% endif %}">
-              Vim-TTR
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="stm" class="{% if page.path == 'stm.html' %}active-page{% endif %}">
-              Spotify Time Machine
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="nflvf" class="{% if page.path == 'nflvf.html' %}active-page{% endif %}">
-              NFL Video Finder
-            </a>
-          </li>
-          <br>
-          <li class="divider" data-content="PROFILES"></li>
-          <li class="menu-item"><a href="https://github.com/bpolly">GitHub</a></li>
-          <li class="menu-item"><a href="https://www.linkedin.com/in/bpolly">LinkedIn</a></li>
-        </ul>
+        {% include_relative _layouts/sidebar.html %}
       </div>
+
       <div class="column">
         {{ content }}
       </div>

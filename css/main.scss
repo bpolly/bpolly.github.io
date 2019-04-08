@@ -1,6 +1,6 @@
 ---
 ---
-@import url('https://fonts.googleapis.com/css?family=Cardo:700|Cormorant+Garamond:500|Source+Serif+Pro|Yellowtail|Hind');
+@import url('https://fonts.googleapis.com/css?family=Cardo:700|Cormorant+Garamond:500|Source+Serif+Pro|Yellowtail|Loro|Playfair+Display');
 
 body, html {
     margin : 0;
@@ -50,7 +50,8 @@ a, a:visited, a:active, a:hover {
 }
 
 .header h2 {
-    font-family: Yellowtail;
+    font-family: Loro;
+    // font-family: Yellowtail;
     // color: #fb6066;
     color: #232323;
 }
