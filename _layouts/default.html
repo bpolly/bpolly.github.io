@@ -1,0 +1,27 @@
+<head>
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+  <script src="js/luminous.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="column col-2" id="sidebar-column">
+        <div id="corner-block"></div>
+        <div class="text-center" id="me-pic">
+          <img src="img_avatar.png">
+        </div>
+        <div id="name" class="h4 text-center">Braden Polly</div>
+        {% include_relative _layouts/sidebar.html %}
+      </div>
+
+      <div class="column">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</body>

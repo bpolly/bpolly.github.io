@@ -1,0 +1,96 @@
+---
+---
+@import url('https://fonts.googleapis.com/css?family=Cardo:700|Cormorant+Garamond:500|Source+Serif+Pro|Yellowtail|Loro|Playfair+Display');
+
+body, html {
+    margin : 0;
+    min-width: 830px;
+}
+
+ul {
+    margin: 0;
+}
+
+a, a:visited, a:active, a:hover {
+    color: #5755d9;
+    font-weight: 200;
+
+    &.active-page {
+        font-weight: 500;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 3.4rem;
+    padding-right: 3.4rem;
+}
+
+#sidebar-column {
+    min-width: 122px;
+    max-width: 190px;
+}
+
+.sidebar-contents {
+    list-style-type: none;
+    margin-top: 30px;
+}
+
+#corner-block {
+    background: #313131;
+    height: 54px;
+}
+
+#name {
+    margin: 0.1rem 0 0.6rem;
+}
+
+.header {
+    margin-top: 19px;
+}
+
+.header h2 {
+    font-family: Loro;
+    // font-family: Yellowtail;
+    // color: #fb6066;
+    color: #232323;
+}
+
+#me-pic {
+    margin-top: -45px;
+}
+
+#me-pic img {
+    border-radius: 50%;
+    width: 85%;
+}
+
+.subtitle {
+    color: #444;
+    font-weight: 300;
+}
+
+#content {
+    font-family: 'Source Serif Pro';
+    padding: 0 1rem;
+    line-height: 1.3rem;
+
+    h5 {
+        font-weight: 600;
+    }
+}
+
+.header-with-label {
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+}
+
+.label {
+    padding: .1rem 0.3rem;
+    font-family: monospace;
+}
+
+.a-project-thumb img {
+    width: 400px;
+}
