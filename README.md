@@ -1,3 +1,7 @@
 # bpolly.github.io
 
-Readme
+### Setup
+```bash
+bundle install
+bundle exec jekyll serve
+```
